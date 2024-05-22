@@ -1,0 +1,37 @@
+.def-text {
+    -unity-font-style: bold;
+    color: rgb(255,255,255);
+}
+
+.def-field {
+    -unity-font-style: bold;
+    width: 125px;
+    height: 35px;
+}
+
+.def-buttons {
+    -unity-font-style: bold;
+    width: 150px;
+    height: 30px;
+    color: rgb(0,0,0);
+    background-color: rgb(249, 170, 51);
+    border-width: 0px;
+}
+
+#MainContainer {
+    background-color: rgb(52, 73, 85);
+    padding: 10px;
+    position: absolute;
+    border-color: rgb(35, 47, 52);
+    border-width: 5px;
+    top: 5px;
+    left: 5px;
+}
+
+#TitleContainer {
+    align-self: center;
+}
+
+#InputContainer {
+    flex-direction: row;
+}
