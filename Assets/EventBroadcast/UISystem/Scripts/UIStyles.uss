@@ -1,6 +1,7 @@
 .def-text {
     -unity-font-style: bold;
     color: rgb(255,255,255);
+    margin-bottom: 5px;
 }
 
 .def-field {
@@ -16,6 +17,8 @@
     color: rgb(0,0,0);
     background-color: rgb(249, 170, 51);
     border-width: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #MainContainer {
