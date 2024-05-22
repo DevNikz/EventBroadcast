@@ -8,7 +8,7 @@
 .def-field {
     -unity-font-style: bold;
     width: 125px;
-    height: 35px;
+    height: 50px;
     border-width: 3px;
     border-color: rgb(35, 47, 52);
 }
