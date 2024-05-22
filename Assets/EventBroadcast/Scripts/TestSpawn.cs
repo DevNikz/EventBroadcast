@@ -48,5 +48,12 @@ public class TestSpawn : MonoBehaviour
     private void OnClearAllEvent()
     {
         //Insert Code
+
+        for (int i = 0; i < this.objectList.Count; i++)
+        {
+            GameObject.Destroy(this.objectList[i].gameObject);
+        }
+
+        this.objectList.Clear();
     }
 }
