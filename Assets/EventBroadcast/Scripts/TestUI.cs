@@ -11,6 +11,8 @@ public class TestUI : MonoBehaviour
     private Button _clearAll;
     private TextField _numSpawn;
 
+    private int intSpawn;
+
     private void Start() 
     {
         this._root = GetComponent<UIDocument>().rootVisualElement;
@@ -27,29 +29,39 @@ public class TestUI : MonoBehaviour
     private void OnSpawnBallClicked()
     {
         //Init Params
-        int numSpawn = int.Parse(this._numSpawn.text);
+        if(this._numSpawn.text == "...") 
+        {
+            intSpawn = 0;
+            Debug.Log("Invalid Input");
+        }
+        else intSpawn = int.Parse(this._numSpawn.text);
         Parameters parameters = new Parameters();
-        parameters.PutExtra(TestSpawn.NUM_SPAWN_KEY, numSpawn);
+        parameters.PutExtra(TestSpawn.NUM_SPAWN_KEY, intSpawn);
 
         //Init Observer for SpawnBall
         EventBroadcaster.Instance.PostEvent(EventNames.Spawner.ON_SPAWN_BALL, parameters);
 
         //Debug
-        Debug.Log(numSpawn);
+        Debug.Log(intSpawn);
     }
 
     private void OnSpawnCubeClicked()
     {
         //Init Params
-        int numSpawn = int.Parse(this._numSpawn.text);
+        if(this._numSpawn.text == "...") 
+        {
+            intSpawn = 0;
+            Debug.Log("Invalid Input");
+        }
+        else intSpawn = int.Parse(this._numSpawn.text);
         Parameters parameters = new Parameters();
-        parameters.PutExtra(TestSpawn.NUM_SPAWN_KEY, numSpawn);
+        parameters.PutExtra(TestSpawn.NUM_SPAWN_KEY, intSpawn);
 
         //Init Observer for SpawnCube
         EventBroadcaster.Instance.PostEvent(EventNames.Spawner.ON_SPAWN_CUBE, parameters);
 
         //Debug
-        Debug.Log(numSpawn);
+        Debug.Log(intSpawn);
     }
 
     private void OnClearAllClicked()

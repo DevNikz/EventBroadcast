@@ -2,12 +2,15 @@
     -unity-font-style: bold;
     color: rgb(255,255,255);
     margin-bottom: 5px;
+    font-size: 15px;
 }
 
 .def-field {
     -unity-font-style: bold;
     width: 125px;
     height: 35px;
+    border-width: 3px;
+    border-color: rgb(35, 47, 52);
 }
 
 .def-buttons {
@@ -17,8 +20,20 @@
     color: rgb(0,0,0);
     background-color: rgb(249, 170, 51);
     border-width: 0px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom-width: 5px;
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-color: rgb(130, 78, 0);
+}
+
+.def-buttons:hover {background-color: rgb(245, 186, 98)}
+
+.def-buttons:active {
+    background-color: rgb(245, 186, 98);
+    transition-property: top;
+    top: 3px;
 }
 
 #MainContainer {

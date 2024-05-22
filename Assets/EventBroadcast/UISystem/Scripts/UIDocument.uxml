@@ -11,7 +11,7 @@
                 <engine:Label name="Title" enable-rich-text="true" text="EVENT BROADCASTER MENU" class="def-text" />
             </engine:VisualElement>
             <engine:VisualElement name="InputContainer" >
-                <engine:Label name="InputNumText" enable-rich-text="true" text="Number of Objects:" class="def-text" />
+                <engine:Label name="InputNumText" enable-rich-text="true" text="OBJECT COUNT:" class="def-text" />
                 <engine:TextField name="InputNum" text="..." class="def-field"/>
             </engine:VisualElement>
             <engine:Button name="SpawnBall" enable-rich-text="true" text="SPAWN BALLS" class="def-buttons"/>
