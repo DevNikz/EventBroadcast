@@ -1,3 +1,3 @@
 # EventBroadcaster
 
-Eventbroadcaster made by Ragudo and Gabriel.
+Eventbroadcaster package made for GDENG01
