@@ -1,22 +1,17 @@
-<engine:UXML 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:engine="UnityEngine.UIElements" 
-    xmlns:editor="UnityEditor.UIElements" 
-    noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" 
-    editor-extension-mode="False">
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/EventBroadcast/UISystem/Scripts/UIStyles.uss?fileID=7433441132597879392&amp;guid=d1f2e9301f1aa414b8b32b3a5f81985f&amp;type=3#UIStyles" />
     <engine:VisualElement name="MainContainer">
         <engine:VisualElement name="SubContainer">
-            <engine:VisualElement name="TitleContainer" >
+            <engine:VisualElement name="TitleContainer">
                 <engine:Label name="Title" enable-rich-text="true" text="EVENT BROADCASTER MENU" class="def-text" />
             </engine:VisualElement>
-            <engine:VisualElement name="InputContainer" >
+            <engine:VisualElement name="InputContainer">
                 <engine:Label name="InputNumText" enable-rich-text="true" text="OBJECT COUNT:" class="def-text" />
-                <engine:TextField name="InputNum" text="..." class="def-field"/>
+                <engine:IntegerField name="InputNum" max-length="10" class="def-field" />
             </engine:VisualElement>
-            <engine:Button name="SpawnBall" enable-rich-text="true" text="SPAWN BALLS" class="def-buttons"/>
-            <engine:Button name="SpawnCube" enable-rich-text="true" text="SPAWN CUBE" class="def-buttons"/>
-            <engine:Button name="ClearAll" enable-rich-text="true" text="CLEAR ALL" class="def-buttons"/>
+            <engine:Button name="SpawnBall" enable-rich-text="true" text="SPAWN BALLS" class="def-buttons" />
+            <engine:Button name="SpawnCube" enable-rich-text="true" text="SPAWN CUBE" class="def-buttons" />
+            <engine:Button name="ClearAll" enable-rich-text="true" text="CLEAR ALL" class="def-buttons" />
         </engine:VisualElement>
     </engine:VisualElement>
 </engine:UXML>

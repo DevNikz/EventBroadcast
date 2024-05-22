@@ -2,12 +2,12 @@
     -unity-font-style: bold;
     color: rgb(255,255,255);
     margin-bottom: 5px;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .def-field {
     -unity-font-style: bold;
-    width: 125px;
+    width: 150px;
     height: 50px;
     border-width: 3px;
     border-color: rgb(35, 47, 52);
@@ -15,8 +15,8 @@
 
 .def-buttons {
     -unity-font-style: bold;
-    width: 150px;
-    height: 30px;
+    width: 250px;
+    height: 50px;
     color: rgb(0,0,0);
     background-color: rgb(249, 170, 51);
     border-width: 0px;
@@ -26,6 +26,8 @@
     border-left-width: 4px;
     border-right-width: 4px;
     border-color: rgb(130, 78, 0);
+    align-self: center;
+    font-size: 20px;
 }
 
 .def-buttons:hover {background-color: rgb(245, 186, 98)}
@@ -52,4 +54,5 @@
 
 #InputContainer {
     flex-direction: row;
+    align-items: center;
 }

@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -9,7 +11,7 @@ public class TestUI : MonoBehaviour
     private Button _spawnBall;
     private Button _spawnCube;
     private Button _clearAll;
-    private TextField _numSpawn;
+    private IntegerField _numSpawn;
 
     private int intSpawn;
 
@@ -19,7 +21,7 @@ public class TestUI : MonoBehaviour
         this._spawnBall = this._root.Q<Button>("SpawnBall");
         this._spawnCube = this._root.Q<Button>("SpawnCube");
         this._clearAll = this._root.Q<Button>("ClearAll");
-        this._numSpawn = this._root.Q<TextField>("InputNum");
+        this._numSpawn = this._root.Q<IntegerField>("InputNum");
 
         this._spawnBall.clicked += this.OnSpawnBallClicked;
         this._spawnCube.clicked += this.OnSpawnCubeClicked;
